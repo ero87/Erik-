@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button levon;
+    private Button ero;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +17,14 @@ public class MainActivity extends AppCompatActivity {
         levon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, R.string.levon, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.levon, Toast.LENGTH_LONG).show();
+            }
+        });
+        ero = (Button) findViewById(R.id.button2);
+        ero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, R.string.erik, Toast.LENGTH_SHORT).show();
             }
         });
     }
